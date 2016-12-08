@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+  
+  h4
+    a(href="/") Home
+  h2 Enter a 
+    a(href="/albums/new") New Album
+  h3 Current Albums
+  table
+    thead
+      tr
+        th ID
+        th Name
+        br
+    tbody
+      for album in allAlbums
+        tr
+          td= album._id
+          td
+            a(href='/albums/' + album._id)= album.name  

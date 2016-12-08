@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1 Update the Album
+  p
+  form(action="#{theAlbum.id}/edit" method="post")
+    input(value="#{theAlbum.name}" type="text" name="name")
+    input(type="submit" value="Update")
