@@ -3,6 +3,9 @@ extends ../layout
 block content
   h1 Update the Album
   p
-  form(action="#{theAlbum.id}/edit" method="post")
-    input(value="#{theAlbum.name}" type="text" name="name")
+  form(action= theAlbum._id + "/edit" method="post")
+    input(value="#{theAlbum.artist}" type="text" name="album_artist")
+    input(value="#{theAlbum.name}" type="text" name="album_name")
+    input(value="#{theAlbum.year}" type="text" name="album_year")
+    input(value="#{theAlbum.genre}" type="text" name="album_genre")
     input(type="submit" value="Update")

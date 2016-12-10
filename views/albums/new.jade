@@ -1,12 +1,16 @@
 extends ../layout
 
 block content
+  a(href='/')
+    h4 Home
   h1 New Album
 
   form(action="/albums", method="post")
     div
-      Name
-      input(type="text" name="album_name")
+      input(type="text" name="album_artist" placeholder="Artist")
+      input(type="text" name="album_name" placeholder="Album Name")
+      input(type="text" name="album_year" placeholder="Year")
+      input(type="text" name="album_genre" placeholder="Genre")
 
     div
       input(type="submit")

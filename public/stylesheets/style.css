@@ -3,17 +3,14 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: lightgrey;
 }
-
 a {
   color: #00B7FF;
 }
-
 thead tr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
 tbody tr {
   display: flex;
   flex-direction: row;
@@ -21,4 +18,18 @@ tbody tr {
 }
 h3{
   text-align: center;
+}
+form {
+  background: darkgrey;
+  padding: 25px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  color:white;
+  font-size: 1.1em;
+}
+form input[type=submit]{
+  background: green;
+  width: 150px;
+  border-radius: 10px;
 }

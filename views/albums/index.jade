@@ -10,12 +10,18 @@ block content
   table
     thead
       tr
-        th ID
-        th Name
-        br
+        th Artist
+        th Album Name
+        th Year
+        th Genre
+        th
     tbody
       for album in allAlbums
         tr
-          td= album._id
+          td= album.artist
           td
             a(href='/albums/' + album._id)= album.name  
+          td= album.year
+          td= album.genre
+          td
+            a(href='/albums/' + album._id + '/delete/') Delete
